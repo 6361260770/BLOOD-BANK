@@ -10,7 +10,7 @@ import java.time.*;
 	public void insert(BloodDonarReg r) throws Exception {
 		// TODO Auto-generated method stub
 		 Class.forName("com.mysql.jdbc.Driver");
-		 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/blooddb", "root", "root123");
+		 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/blooddb", "root", "password");
 		 System.out.println("Connected ");
 		 String query="insert into donnar values(?,?,?,?,?)";
 		 PreparedStatement st=connection.prepareStatement(query);
